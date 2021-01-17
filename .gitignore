@@ -16,6 +16,9 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+# User settings
+xcuserdata/
+
 # others
 *.swp
 !.gitkeep

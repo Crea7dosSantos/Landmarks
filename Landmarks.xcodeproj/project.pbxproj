@@ -25,6 +25,8 @@
 		8F7D223A25B417DD00B23761 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D223825B417DD00B23761 /* CircleImage.swift */; };
 		8F7D224025B4192D00B23761 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D223F25B4192D00B23761 /* MapView.swift */; };
 		8F7D224125B4192D00B23761 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D223F25B4192D00B23761 /* MapView.swift */; };
+		8FBF466C25BEF94E0028AE17 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF466B25BEF94E0028AE17 /* FavoriteButton.swift */; };
+		8FBF466D25BEF94E0028AE17 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF466B25BEF94E0028AE17 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		8F769AD025B4425500A52A63 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		8F769AD625B442AA00A52A63 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		8F769ADC25B4450D00A52A63 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		8F769AFB25B44AE900A52A63 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = SOURCE_ROOT; };
+		8F769AFB25B44AE900A52A63 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandmarkRow.swift; path = Shared/View/Landmarks/LandmarkRow.swift; sourceTree = SOURCE_ROOT; };
 		8F769B0125B44F9E00A52A63 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		8F769B0725B4519200A52A63 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		8F7D21F725B4129F00B23761 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		8F7D221F25B412A300B23761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7D223825B417DD00B23761 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8F7D223F25B4192D00B23761 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8FBF466B25BEF94E0028AE17 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +107,9 @@
 		8F769AE225B4469F00A52A63 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8F769AFB25B44AE900A52A63 /* LandmarkRow.swift */,
-				8F769B0125B44F9E00A52A63 /* LandmarkList.swift */,
-				8F769B0725B4519200A52A63 /* LandmarkDetail.swift */,
 				8F7D21F825B4129F00B23761 /* ContentView.swift */,
-				8F7D223825B417DD00B23761 /* CircleImage.swift */,
-				8F7D223F25B4192D00B23761 /* MapView.swift */,
+				8FBF467325BEFA350028AE17 /* Helpers */,
+				8FBF467225BEFA280028AE17 /* Landmarks */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +199,26 @@
 				8F7D221F25B412A300B23761 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		8FBF467225BEFA280028AE17 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				8F769AFB25B44AE900A52A63 /* LandmarkRow.swift */,
+				8F769B0125B44F9E00A52A63 /* LandmarkList.swift */,
+				8F769B0725B4519200A52A63 /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		8FBF467325BEFA350028AE17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF466B25BEF94E0028AE17 /* FavoriteButton.swift */,
+				8F7D223F25B4192D00B23761 /* MapView.swift */,
+				8F7D223825B417DD00B23761 /* CircleImage.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +382,7 @@
 				8F7D222225B412A300B23761 /* ContentView.swift in Sources */,
 				8F7D224025B4192D00B23761 /* MapView.swift in Sources */,
 				8F7D222025B412A300B23761 /* LandmarksApp.swift in Sources */,
+				8FBF466C25BEF94E0028AE17 /* FavoriteButton.swift in Sources */,
 				8F769B0225B44F9E00A52A63 /* LandmarkList.swift in Sources */,
 				8F769B0825B4519200A52A63 /* LandmarkDetail.swift in Sources */,
 				8F7D223925B417DD00B23761 /* CircleImage.swift in Sources */,
@@ -378,6 +399,7 @@
 				8F7D222325B412A300B23761 /* ContentView.swift in Sources */,
 				8F7D224125B4192D00B23761 /* MapView.swift in Sources */,
 				8F7D222125B412A300B23761 /* LandmarksApp.swift in Sources */,
+				8FBF466D25BEF94E0028AE17 /* FavoriteButton.swift in Sources */,
 				8F7D223A25B417DD00B23761 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,6 @@ struct MapView: View {
             .onAppear {
                 setRegion(coordinate)
             }
-            
     }
     
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
